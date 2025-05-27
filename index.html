@@ -24,18 +24,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>FEANEL</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+  <!-- <link rel="stylesheet" href="./static/css/video-player.css"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -46,74 +46,115 @@
 </head>
 <body>
 
+<!-- TODO: Add navbar -->
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <h1 class="title is-1 publication-title is-bold">
+            <!-- 添加LOGO -->
+            <!-- <img src="static/images/logo.png" style="width:1.8em;vertical-align: middle" alt="Logo"/> -->
+            <span class="mme-realworld" style="vertical-align: middle;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">FEANEL</span>
+          </h1>
+
+          <h2 class="subtitle is-3 publication-subtitle", style="width: 100%;margin-bottom: 20px;">
+            <strong>A Benchmark for Fine-Grained Error Analysis in K-12 English Writing</strong>
+          </h2>
+
+          <div class="is-size-5 publication-authors", style="width: 100%; margin: 15px auto;", >
+            <span class="author-block">Jingheng Ye<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#ed4b82">2</sup>,</span>
+            <span class="author-block">Shen Wang<sup style="color:#18acfb;">1</sup>,</span>
+            <span class="author-block">Jiaqi Chen<sup style="color:#ed4b82;">2</sup>,</span>
+            <span class="author-block">Hebin Wang<sup style="color:#ed4b82">2</sup>,</span>
+            <span class="author-block">Deqing Zou<sup style="color:#ed4b82">2</sup>,</span>
+            <span class="author-block">Yanyu Zhu<sup style="color:#ed4b82;">2</sup>,</span>
+            <span class="author-block">Jiwei Tang<sup style="color:#ed4b82">2</sup>,</span>
+            <span class="author-block">Hai-Tao Zheng<sup style="color:#ed4b82">2</sup>,</span>
+            <span class="author-block">Ruitong Liu<sup style="color:#ed4b82">2</sup>,</span>
+            <span class="author-block">Haoyang Li<sup style="color:#18acfb;">1</sup>,</span>
+            <span class="author-block">Yanfeng Wang<sup style="color:#33ffd6;">3</sup>,</span>
+            <span class="author-block">Qingsong Wen<sup style="color:#18acfb;">1</sup>,</span>
+            <!-- <br><span class="author-block", style="font-size:25px;text-shadow: 2px 2px 4px rgba(67, 113, 232, 0.5)"><a href="http://www.cripac.ia.ac.cn/CN/model/index.htm">CASIA MAIS-NLPR</a></span></br> -->
+          </div>
+
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block">Institution Name<br>Conferance name and year</span>
+            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+          </div> -->
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup style="color:#53bcf5">1</sup>Squirrel Ai Learning,</span>
+            <span class="author-block"><sup style="color:#9400D3">2</sup>Tsinghua University,</span>
+            <span class="author-block"><sup style="color:#ed4b82">3</sup>Shanghai Jiao Tong University</span>
+            <!-- <span class="author-block"><sup style="color:#ffac33">4</sup>NTU,</span>
+            <span class="author-block"><sup style="color:#1a4ebf">5</sup>UCAS,</span>
+            <span class="author-block"><sup style="color:#6fbf73">6</sup>Squirrel AI Learning,</span>
+            <span class="author-block"><sup style="color:#33ffd6">7</sup>Meta AI</span><br> -->
+            <!-- <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
+          </div>
+
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+            <div class="publication-links">
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <!-- Arxiv PDF link -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2408.13257" class="external-link button is-normal is-rounded is-dark">\
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
+              
+              <!-- ArXiv abstract Link -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+
+              <!-- Supplementary PDF link -->
+              <!-- <span class="link-block">
+                <a href="static/pdfs/supplementary_material.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Supplementary</span>
+                </a>
+              </span> -->
+
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/YOUR REPO HERE" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/yifanzhang114/MME-RealWorld" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><p style="font-size:18px">🤗</p></span>
+                  <span>Dataset</span>
+                </a>
+              </span> 
+              
+              <!-- Leaderboard Link. -->
+              <!-- <span class="link-block">
+                <a href="#leaderboard" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><p style="font-size:18px">🏆</p></span>
+                  <span>Leaderboard</span>
+                </a>
+              </span> -->
+
             </div>
           </div>
         </div>
@@ -124,11 +165,10 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -137,11 +177,11 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -154,38 +194,149 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End paper abstract -->
+
+<!-- Paper Introduction. -->
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: -5%;">Introduction</h2>
+        <div class="content has-text-justified">
+          &nbsp;&nbsp;&nbsp;Large Language Models (LLMs) have unlocked unprecedented potential for personalised education, yet their <strong>fine-grained feedback on K-12 English writing remains largely unexplored</strong>. Existing systems usually provide (1) surface-level grammatical fixes or (2) coarse holistic scores, leaving teachers and students without actionable or error-specific guidance.<br><br>
+
+          &nbsp;&nbsp;&nbsp;We introduce <strong>FEANEL</strong>—<strong>F</strong>ine-grained <strong>E</strong>rror <strong>AN</strong>alysis for <strong>E</strong>nglish <strong>L</strong>earners—<strong>a new benchmark expressly designed to evaluate and advance the pedagogical abilities of LLMs</strong>. FEANEL contains <strong>1,000 student essays</strong> (Grades 3-12) with <strong>8,676 expert-annotated error analyses</strong> built upon a <strong>29-category, part-of-speech-driven taxonomy</strong>. All annotations include <em>Error Type</em>, <em>Severity (1-5)</em>, and a <em>human-written explanation</em>.<br><br>
+
+          The main advantages of FEANEL over previous datasets are summarized as follows:<br>
+
+          <strong>&nbsp;&nbsp;&nbsp;1. Pedagogical Granularity.</strong> Each edit is labelled with <em>type&nbsp;+&nbsp;severity&nbsp;+&nbsp;explanation</em>, enabling models to go far beyond binary “correct/incorrect” judgements.<br>
+          
+          <strong>&nbsp;&nbsp;&nbsp;2. Expert-Curated Taxonomy.</strong> A mutually-exclusive, 29-class hierarchy co-designed with veteran English educators eliminates the ambiguity of earlier ad-hoc tags.<br>
+          
+          <strong>&nbsp;&nbsp;&nbsp;3. Real K-12 Coverage.</strong> Balanced sampling of 500 elementary and 500 secondary essays captures diverse proficiency levels and authentic school-specific error patterns.<br>
+          
+          <strong>&nbsp;&nbsp;&nbsp;4. Rigorous Quality Control.</strong> Dual-phase annotation, cross-validation, and manual explanation selection ensure high fidelity; no synthetic errors or model-generated labels are used.<br>
+          
+          <strong>&nbsp;&nbsp;&nbsp;5. Comprehensive Evaluation Suite.</strong> We assess LLMs across <em>Accuracy</em>, <em>Macro-F1</em>, <em>MAE</em>, and text-generation metrics (BLEU, METEOR, ROUGE-L), offering a 360° view of linguistic and pedagogical competence.<br><br>
+
+          &nbsp;&nbsp;&nbsp;Benchmarking state-of-the-art LLMs on FEANEL reveals <strong>significant gaps</strong>: even the best models mis-classify complex edits and miss the subtle instructional tone found in human feedback. Performance varies markedly with prompt design and task ordering, underscoring the need for specialised methods. <br><br>
+
+          &nbsp;&nbsp;&nbsp;By providing a high-quality dataset, a unified error taxonomy for English writing, and a thorough evaluation protocol, FEANEL paves the way for <strong>next-generation educational LLMs that deliver precise, interpretable, and learner-centric feedback</strong>.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ End paper Introduction. -->
+
+
+<!-- TODO: Leaderboard -->
+
+
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 mathvista_other">
+    <span class="mathvista_other" style="vertical-align: middle">Benchmark</span>
+  </h1>
+  </div>
+</section>
+
+
+<!-- RESULTS SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathvista_other">Experiment Results</h1>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathvista_other" id="citation">Citation</h1>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <pre><code>
+      @article{zhang2024mme,
+        title={MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?},
+        author={Zhang, Yi-Fan and Zhang, Huanyu and Tian, Haochen and Fu, Chaoyou and Zhang, Shuangqing and Wu, Junfei and Li, Feng and Wang, Kun and Wen, Qingsong and Zhang, Zhang and others},
+        journal={arXiv preprint arXiv:2408.13257},
+        year={2024}
+      }      
+    </code></pre>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="width: 60%;">
+  <style>
+      pre {
+        background-color: #f4f4f4;
+        padding: 5px; /* 调整padding为5px */
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow-x: auto; /* 允许水平滚动 */
+    }
+    code {
+        font-family: Consolas, "Courier New", monospace;
+        color: #d63384; /* 代码文本颜色 */
+    }
+  </style>
+
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p style="text-align: center;">
+            This website is adapted from <a href="https://video-mme.github.io/">Video-MME</a>, 
+            licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -194,119 +345,100 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
-
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
+            <source src="static/videos/carousel1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
-
-
-
-
-
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
-
       <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
+      </iframe>
     </div>
-  </section>
+  </div>
+</section> -->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>BibTex Code Here</code></pre>
+  </div>
+</section> -->
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
   
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+<!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
