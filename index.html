@@ -23,7 +23,6 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <title>FEANEL</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -61,7 +60,7 @@
           </h1>
 
           <h2 class="subtitle is-3 publication-subtitle", style="width: 100%;margin-bottom: 20px;">
-            <strong>A Benchmark for Fine-Grained Error Analysis in K-12 English Writing</strong>
+            <strong>A Benchmark for Fine-Grained Error Analysis in <br> K-12 English Writing</strong>
           </h2>
 
           <div class="is-size-5 publication-authors", style="width: 100%; margin: 15px auto;", >
@@ -204,25 +203,23 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3" style="margin-top: -5%;">Introduction</h2>
         <div class="content has-text-justified">
-          &nbsp;&nbsp;&nbsp;Large Language Models (LLMs) have unlocked unprecedented potential for personalised education, yet their <strong>fine-grained feedback on K-12 English writing remains largely unexplored</strong>. Existing systems usually provide (1) surface-level grammatical fixes or (2) coarse holistic scores, leaving teachers and students without actionable or error-specific guidance.<br><br>
+          Large Language Models (LLMs) have unlocked unprecedented potential for personalised education, yet their <strong>fine-grained feedback on K-12 English writing remains largely unexplored</strong>. Existing systems usually provide (1) surface-level grammatical fixes or (2) coarse holistic scores, leaving teachers and students without actionable or error-specific guidance.<br><br>
 
-          &nbsp;&nbsp;&nbsp;We introduce <strong>FEANEL</strong>—<strong>F</strong>ine-grained <strong>E</strong>rror <strong>AN</strong>alysis for <strong>E</strong>nglish <strong>L</strong>earners—<strong>a new benchmark expressly designed to evaluate and advance the pedagogical abilities of LLMs</strong>. FEANEL contains <strong>1,000 student essays</strong> (Grades 3-12) with <strong>8,676 expert-annotated error analyses</strong> built upon a <strong>29-category, part-of-speech-driven taxonomy</strong>. All annotations include <em>Error Type</em>, <em>Severity (1-5)</em>, and a <em>human-written explanation</em>.<br><br>
+          We introduce <strong>FEANEL</strong>—<strong>F</strong>ine-grained <strong>E</strong>rror <strong>AN</strong>alysis for <strong>E</strong>nglish <strong>L</strong>earners—<strong>a new benchmark expressly designed to evaluate and advance the pedagogical abilities of LLMs</strong>. FEANEL contains <strong>1,000 student essays</strong> (Grades 3-12) with <strong>8,676 expert-annotated error analyses</strong> built upon a <strong>29-category, part-of-speech-driven taxonomy</strong>. All annotations include <em>Error Type</em>, <em>Severity (1-5)</em>, and a <em>human-written explanation</em>. The main advantages of FEANEL over previous datasets are summarized as follows:<br>
 
-          The main advantages of FEANEL over previous datasets are summarized as follows:<br>
-
-          <strong>&nbsp;&nbsp;&nbsp;1. Pedagogical Granularity.</strong> Each edit is labelled with <em>type&nbsp;+&nbsp;severity&nbsp;+&nbsp;explanation</em>, enabling models to go far beyond binary “correct/incorrect” judgements.<br>
+          <strong>&nbsp;1. Pedagogical Granularity.</strong> Each edit is labelled with <em>type&nbsp;+&nbsp;severity&nbsp;+&nbsp;explanation</em>, enabling models to go far beyond binary “correct/incorrect” judgements.<br>
           
-          <strong>&nbsp;&nbsp;&nbsp;2. Expert-Curated Taxonomy.</strong> A mutually-exclusive, 29-class hierarchy co-designed with veteran English educators eliminates the ambiguity of earlier ad-hoc tags.<br>
+          <strong>&nbsp;2. Expert-Curated Taxonomy.</strong> A mutually-exclusive, 29-class hierarchy co-designed with veteran English educators eliminates the ambiguity of earlier ad-hoc tags.<br>
           
-          <strong>&nbsp;&nbsp;&nbsp;3. Real K-12 Coverage.</strong> Balanced sampling of 500 elementary and 500 secondary essays captures diverse proficiency levels and authentic school-specific error patterns.<br>
+          <strong>&nbsp;3. Real K-12 Coverage.</strong> Balanced sampling of 500 elementary and 500 secondary essays captures diverse proficiency levels and authentic school-specific error patterns.<br>
           
-          <strong>&nbsp;&nbsp;&nbsp;4. Rigorous Quality Control.</strong> Dual-phase annotation, cross-validation, and manual explanation selection ensure high fidelity; no synthetic errors or model-generated labels are used.<br>
+          <strong>&nbsp;4. Rigorous Quality Control.</strong> Dual-phase annotation, cross-validation, and manual explanation selection ensure high fidelity; no synthetic errors or model-generated labels are used.<br>
           
-          <strong>&nbsp;&nbsp;&nbsp;5. Comprehensive Evaluation Suite.</strong> We assess LLMs across <em>Accuracy</em>, <em>Macro-F1</em>, <em>MAE</em>, and text-generation metrics (BLEU, METEOR, ROUGE-L), offering a 360° view of linguistic and pedagogical competence.<br><br>
+          <strong>&nbsp;5. Comprehensive Evaluation Suite.</strong> We assess LLMs across <em>Accuracy</em>, <em>Macro-F1</em>, <em>MAE</em>, and text-generation metrics (BLEU, METEOR, ROUGE-L), offering a 360° view of linguistic and pedagogical competence.<br><br>
 
-          &nbsp;&nbsp;&nbsp;Benchmarking state-of-the-art LLMs on FEANEL reveals <strong>significant gaps</strong>: even the best models mis-classify complex edits and miss the subtle instructional tone found in human feedback. Performance varies markedly with prompt design and task ordering, underscoring the need for specialised methods. <br><br>
+          Benchmarking state-of-the-art LLMs on FEANEL reveals <strong>significant gaps</strong>: even the best models mis-classify complex edits and miss the subtle instructional tone found in human feedback. Performance varies markedly with prompt design and task ordering, underscoring the need for specialised methods.<br><br>
 
-          &nbsp;&nbsp;&nbsp;By providing a high-quality dataset, a unified error taxonomy for English writing, and a thorough evaluation protocol, FEANEL paves the way for <strong>next-generation educational LLMs that deliver precise, interpretable, and learner-centric feedback</strong>.
+          By providing a high-quality dataset, a unified error taxonomy for English writing, and a thorough evaluation protocol, FEANEL paves the way for <strong>next-generation educational LLMs that deliver precise, interpretable, and learner-centric feedback</strong>.
         </div>
       </div>
     </div>
@@ -244,12 +241,69 @@
 </section>
 
 
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-centered" style = "margin-top: 5%;">
+        <h2 class="title is-3">Benchmark Overview</h2>
+        <img src="static/images/overview.png" alt="" width="80%"/>
+        <p style="text-align: center;", class="mt-3">
+          <strong>Overview</strong>: Comparison of our focus on Fine-grained Error Analysis with existing studies, including Automated Essay Scoring and Grammatical Error Correction.
+        </p>
+      </div>
+
+      <div class="content has-text-centered" style = "margin-top: 5%;">
+        <h2 class="title is-3">Benchmark Statistics</h2>
+        <img src="static/images/Fig2.png" alt="" width="80%"/>
+        <p style="text-align: center;", class="mt-3">
+          <strong>Error Type Distribution</strong>: We illustrate the most frequent 16 error types due to the space limit and present the remaining error types as "Other".
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- RESULTS SECTION -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
     <h1 class="title is-1 mathvista_other">Experiment Results</h1>
   </div>
 </section>
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column has-text-centered content">
+        
+        <!-- Zero-shot-naive Results -->
+        <h2 class="title is-3">Main results of the Zero-shot-naive setting.</h2>
+        <div class="box m-5">
+          <img src="static/images/Tab2.png" alt="" width="90%"/>
+          <p style="text-align: center; margin-left: auto; margin-right: auto; width: 90%;" >
+            <strong>Main results of the Zero-shot-naive setting</strong>: We color the results of secondary school essays.
+          </p>
+        </div>
+
+        <!-- One-shot-detailed Results -->
+        <h2 class="title is-3">Main results of the One-shot-detailed setting.</h2>
+        <div class="box m-5">
+          <img src="static/images/Tab3.png" alt="" width="90%"/>
+          <p style="text-align: center; margin-left: auto; margin-right: auto; width: 90%;" >
+            <strong>Main results of the One-shot-naive setting</strong>: We color the results of secondary school essays.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
 <section class="hero is-light is-small">
@@ -262,12 +316,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <pre><code>
-      @article{zhang2024mme,
+      <!-- @article{zhang2024mme,
         title={MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?},
         author={Zhang, Yi-Fan and Zhang, Huanyu and Tian, Haochen and Fu, Chaoyou and Zhang, Shuangqing and Wu, Junfei and Li, Feng and Wang, Kun and Wen, Qingsong and Zhang, Zhang and others},
         journal={arXiv preprint arXiv:2408.13257},
         year={2024}
-      }      
+      }       -->
     </code></pre>
   </div>
 </section>
